@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<nmaprun>
+  <!-- Sample / sanitized nmap XML for testing the parser -->
+  <host>
+    <address addr="10.0.0.5" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="lab-vm.local"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh"/>
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>
